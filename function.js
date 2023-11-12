@@ -235,13 +235,97 @@ function handleSubmit() {
     " — 106":
     '"انتخابی تازه برای استایلی نو"',
     " — 107":
-    '"با این لباس ها یه استایل مطمئن بساز"'
+    '"با این لباس ها یه استایل مطمئن بساز"',
+    " — 108":
+    '"سویشرت، برجسته‌ترین بخش تیپ های پاییزی"',
+    " — 109":
+    '"قرارهای مهم کاری با این ست استاندارد و مرتب"',
+    " — 110":
+    '"تیپت با این سویشرت کامل‌تره"',
+    " — 111":
+    '"با این رنگ‌ها کمد لباستون روشن‌تر میشه"',
+    " — 112":
+    '"لباسی هست که با شلوار جین مچ نشه؟"',
+    " — 113":
+    '"پیراهن‌های زمستانی‌، خوش استایل، گرم و ضخیم"',
+    " — 114":
+    '"سویشرتی (هودی) گرم برای روزهای بارونی"',
+    " — 115":
+    '"با این لباس ها استایلت رو منحصر به فرد کن"',
+    " — 116":
+    '"یک سبک واقعی برای ایجاد حسی خاص"',
+    " — 117":
+    '"بهترین طرح دستچین شده برای شما"',
+    " — 118":
+    '"با طراحی منحصر به فرد لباس ما بهترین نسخه خود را بیابید"',
+    " — 119":
+    '"با این استایل منحصر به فرد راحتی رو تجربه کن"',
+    " — 120":
+    '"با سبک های منحصر به فرد ما بهترین های خود را به دنیا نشان دهید"',
+    " — 121":
+    '"بهترین ها را در خود بیابید"',
+    " — 122":
+    '"چیزی که حتی در میان جمعیت ظاهری منحصر به فرد به شما می بخشد"',
+    " — 123":
+    '"سبک شیک لباس هایی که شما را از هر نظر خاص می کند"',
+    " _ 124":
+    '"سبکی که خلاقیت و آزمایش منحصر به فرد ما را با هر مجموعه ای از طرح های ما نشان می دهد"',
+    " _ 125":
+    '"خلاقانه، راحت و بادوام"',
+    " _ 126":
+    '"زندگی برای پوشیدن لباس های خسته کننده خیلی کوتاه است"',
+    " _ 127":
+    '"زندگی کامل نیست، اما لباس شما می تواند عالی باشد"',
+    " _ 128":
+    '"این ترکیب شمارا خوش استایل تر جلوه می دهد"',
+    " _ 129":
+    '"هرگز قدرت یک لباس خوب را دست کم نگیرید"',
+    " _ 130":
+    '"لباس هوشمند، زندگی هوشمند"',
+    " _ 131":
+    '"ساده و خوش استایل مثل ست امروز ما"',
+    " _ 132":
+    '"رنگ هایی که هرگز محو نمی شوند"',
+    " _ 134":
+    '"استایل بهتر ، اعتماد به نفس بیشتر"',
+    " _ 135":
+    '"میتونی با این ست دیگران رو تحت تاثیر قرار بدید"',
+    " _ 136":
+    '"امروز خود را با ترکیب جدید ما بسازید"',
+    " _ 137":
+    '"با لباس خود همه را تحت تاثیر قرار دهید"',
+    " _ 138":
+    '"استایلی کلاسیک برای استفاده روزمره شما"',
+    " _ 139":
+    '"لباس هایی که قرار است عاشق آن ها شوی"',
+    " _ 140":
+    '"ظاهری مدرن به استایل منحصر به فرد خود بدهید"',
+    " _ 141":
+    '"این ترکیب رنگ اعتماد به نفست رو چند برابر می کنه"'
   };
-  let randomAuthors = Object.keys(quotes);
+  let randomAuthors = Object.keys(quotes); // all my items [array] just the numbers
   let authorPicker =
+    randomAuthors[Math.floor(Math.random() * randomAuthors.length)]; // chooses one of the items randomly (array index)
+  let authorPicker2 =
     randomAuthors[Math.floor(Math.random() * randomAuthors.length)];
-  let quote = quotes[authorPicker];
+  let authorPicker3 =
+    randomAuthors[Math.floor(Math.random() * randomAuthors.length)];
+  let authorPicker4 =
+    randomAuthors[Math.floor(Math.random() * randomAuthors.length)];
+  let authorPicker5 =
+    randomAuthors[Math.floor(Math.random() * randomAuthors.length)];
+  let quote = quotes[authorPicker]; // now we want to get the items assigned to the numbers
+  let quote2 = quotes[authorPicker2];
+  let quote3 = quotes[authorPicker3];
+  let quote4 = quotes[authorPicker4];
+  let quote5 = quotes[authorPicker5];
+
+
   document.getElementById("result").innerHTML = quote;
+  document.getElementById("result2").innerHTML = quote2;
+  document.getElementById("result3").innerHTML = quote3;
+  document.getElementById("result4").innerHTML = quote4;
+  document.getElementById("result5").innerHTML = quote5; // DOM manipulation
 
 }
 handleSubmit();
